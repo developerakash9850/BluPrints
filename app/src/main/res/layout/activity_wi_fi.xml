@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:fillViewport="true"
+    android:layout_weight="1.0"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#d9d9d9"
+    android:id="@+id/linear">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textColor="#990000"
+            android:textSize="20sp"
+            android:layout_marginRight="15dp"
+            android:text="@string/type"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/edittext"
+        android:layout_weight="0.5"
+        android:layout_marginTop="8dp"
+        android:textColorHint="#000000"
+        android:hint="@string/ip"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pairing"
+        android:text="@string/connect"
+        android:background="@drawable/buttonwifi"
+        android:textColor="#ffffff"
+        android:onClick="onClickWifi"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bill"
+            android:text="@string/printBill"
+            android:background="@drawable/buttonwifi"
+            android:layout_marginRight="2dp"
+            android:textColor="#ffffff"
+            android:onClick="onPrintBill"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/printMultilingual"
+            android:text="@string/multilingual"
+            android:background="@drawable/buttonwifi"
+            android:layout_marginRight="2dp"
+            android:textColor="#ffffff"
+            android:onClick="onPrintMultilingual"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/printRasterImage"
+            android:text="Gallery Image"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/buttonwifi"
+            android:textColor="#ffffff"
+            android:onClick="onPrintRasterImage"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/print"
+            android:text="@string/printText"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/buttonwifi"
+            android:textColor="#ffffff"
+            android:onClick="onPrint"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/printBarcode"
+            android:text="@string/printBarcode"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/buttonwifi"
+            android:textColor="#ffffff"
+            android:onClick="onPrintBarcode"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rasterprintQRcode"
+            android:text="Print Qr Code"
+            android:background="@drawable/buttonwifi"
+            android:textColor="#ffffff"
+            android:layout_marginRight="2dp"
+            android:onClick="onPrintQRCodeRaster"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rasterprintImage"
+            android:text="Print Image"
+            android:background="@drawable/buttonwifi"
+            android:layout_marginLeft="2dp"
+            android:textColor="#ffffff"
+            android:onClick="onPrintImageRaster"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="3dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/disconnectbutton"
+            android:layout_marginTop="4dp"
+            android:text="@string/disconnect"
+            android:background="@drawable/buttonwifi"
+            android:textColor="#ffffff"
+            android:onClick="onDisconnectDevice"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
